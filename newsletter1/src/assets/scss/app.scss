@@ -1,0 +1,170 @@
+@import 'settings';
+@import 'foundation';
+
+body {
+  font-size: 14px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+h1, h2 {
+  color: #000;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.header {
+    background: #333333;
+    padding: 8px 0 12px 0;
+    padding-bottom: 4px !important;
+
+    .logo {
+      padding-top: 8px;
+    }
+}
+
+.title {
+  padding-top: 10px;
+  text-transform: uppercase;
+  p {
+    text-align: center;
+    font-size: 14px;
+    //text-transform: uppercase;
+    &.strong, .strong {
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+}
+
+.discount {
+  background: #ED1C24;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 24px;
+  letter-spacing: 1px;
+  padding: 8px 14px 8px 14px;
+}
+
+.bigger {
+  font-size: 17px;
+}
+
+.no-padding-bottom {
+  padding-bottom: 0 !important;
+}
+
+.item {
+  //border:1px solid #EFEFEF;
+  background: #FFF;
+  //margin-top: 8px;
+
+  &.top-padding {
+    padding-top: 20px;
+  }
+  h3, p {
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #000;
+    line-height: 16px;
+  }
+  .product-image {
+    width: 80%;
+    min-height: 124px;
+    max-height: 124px;
+  }
+
+  h3 {
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 2px;
+  }
+
+  .content {
+    display: block;
+    width: 100%;
+  }
+
+  .name {
+    padding: 12px 8px 12px 8px;
+    //min-height: 75px;
+
+    .price {
+      float: left;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-size: 16px;
+    }
+    .old-price {
+      float: right;
+      color: #898989;
+      font-size: 10px;
+      text-decoration: line-through;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 11px;
+      text-align: center;
+    }
+  }
+
+}
+
+.points img {
+  margin: 30% 0 0 0;
+}
+
+.footer {
+  background: #000000;
+  color: #9a9a9a !important;
+  text-align: center;
+  p, div {
+    color: #9a9a9a !important;
+  }
+
+  a, div a, span a  {
+    font-size: 14px;
+    color: #9a9a9a !important;
+  }
+
+  .social {
+    &.title {
+      text-transform: uppercase;
+      color: #FFFFFF;
+      font-size: 14px;
+      font-weight: bold;
+    }
+  }
+
+  &.nav {
+    table.menu td.menu-item, table.menu th.menu-item {
+      padding: 0;
+    }
+    th.menu-item a {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: #FFFFFF !important;
+    }
+    th.menu-item a:after {
+      content: '|';
+      margin: 0 8px 0 8px;
+    }
+
+    th.menu-item:last-child a:after {
+      content: '';
+    }
+  }
+
+  &.mailchimp p {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-device-width: 616px) {
+  .no-padding-bottom {
+    padding-bottom: 15px !important;
+  }
+}
